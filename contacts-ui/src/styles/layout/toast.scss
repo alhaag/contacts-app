@@ -1,0 +1,30 @@
+#application-toasts {
+
+    button {
+        margin-right: 20px;
+        background-color: rgba(0,0,0,0.2);
+    }
+
+    z-index: 1000000000 !important;
+
+    &.info {
+        background-color: #323232;
+    }
+
+    &.error {
+        background-color: #d40000;
+
+        button {
+            color: #ffffff !important;
+        }
+    }
+
+    &.success {
+        background-color: darkgreen;
+
+        button {
+            color: #ffffff !important;
+        }
+    }
+
+}

@@ -1,0 +1,31 @@
+
+.box-search {
+    border: 1px solid #ddd;
+}
+
+.textos-select {
+    overflow-y: scroll;
+    list-style: none;
+    padding: 0 8px;
+    margin: 0;
+    transition: height 400ms ease-in;
+
+    li {
+        font-size: 13px;
+        padding: 3px 0 0 5px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #ccc;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .textos-select {
+        li {
+            font-size: 14px;
+            padding: 4px 0 0 5px;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.env
+.DS_Store
+mysql-data
+!mysql-data/README.md
+data/mysql
+data/nginx_cache
+# SE Linux files
+my-chown.pp
+my-chown.te
+my-colord.pp
+my-colord.te

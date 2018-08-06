@@ -1,0 +1,13 @@
+.label {
+    text-align: left;
+}
+
+@media (min-width: 839px) {
+    .label {
+        text-align: right;
+    }
+}
+
+.value {
+
+}

@@ -1,0 +1,14 @@
+[Unit]
+Description=contacts-api - Contacts API
+Documentation=https://github.com/alhaag/contacts-api
+After=network.target
+
+[Service]
+Environment=NODE_ENV=production
+Type=simple
+User=root
+ExecStart=/home/user/contacts-api/start.sh
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

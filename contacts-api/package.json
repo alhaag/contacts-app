@@ -1,0 +1,36 @@
+{
+  "name": "contacts-api",
+  "description": "Main API of Contacts",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon bin/www",
+    "updateModels": "./node_modules/sequelize-auto/bin/sequelize-auto --output './model' --database morsch_simulador --host localhost --user root --port 3306 --pass 123456 --dialect mysql"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "config": "^1.25.1",
+    "continuation-local-storage": "^3.2.1",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "express": "~4.16.3",
+    "express-validator": "^2.18.0",
+    "mime": "^2.2.0",
+    "morgan": "^1.9.0",
+    "mysql2": "^1.5.3",
+    "node-uuid": "^1.4.8",
+    "sequelize": "^4.37.7",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "mysql": "^2.15.0",
+    "sequelize-auto": "^0.4.29",
+    "standard": "^11.0.1"
+  },
+  "standard": {
+    "globals": ["logger", "__base", "config"],
+    "ignore": [
+        "node_modules/**"
+    ]
+  }
+}

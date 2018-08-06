@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Presentation DetailOrEmptyMessage component empty data text 1`] = `
+<span
+  className="md-text--theme-secondary"
+>
+  Não informado
+</span>
+`;
+
+exports[`Presentation DetailOrEmptyMessage component empty data text and custom error 1`] = `
+<span
+  className="md-text--theme-secondary"
+>
+  Não informado
+</span>
+`;
+
+exports[`Presentation DetailOrEmptyMessage component has data text 1`] = `
+<span>
+  testing text
+</span>
+`;

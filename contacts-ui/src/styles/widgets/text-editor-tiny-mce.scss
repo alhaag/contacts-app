@@ -1,0 +1,49 @@
+.mce-panel {
+    border-color: #d2d6de !important;
+    background-color: #fff !important;
+}
+
+.mce-panel,
+.mce-container {
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+.TextEditor-root {
+    border: 1px solid #ddd;
+}
+
+.TextEditor-label-container.top {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+}
+
+.TextEditor-label-container.bottom {
+    border-top: 1px solid #ddd;
+    padding: 8px;
+}
+
+.TextEditor-root.has-focus .TextEditor-label {
+    color: #2D2D2D;
+}
+
+.TextEditor-label {
+    font-size: 13px;
+}
+
+@media screen and (max-width: 1025px) {
+    .TextEditor-label {
+        font-size: 16px;
+    }
+}
+
+.TextEditor-root.has-error {
+    .TextEditor-label {
+      color: #f44336;
+    }
+
+    .md-divider,
+    .md-divider--text-field::after {
+      background: #f44336;
+    }
+}

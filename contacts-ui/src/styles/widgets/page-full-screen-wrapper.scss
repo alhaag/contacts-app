@@ -1,0 +1,11 @@
+.full-screen-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 110;
+    background: #efefef;
+}

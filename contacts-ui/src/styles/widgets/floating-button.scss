@@ -1,0 +1,14 @@
+.floating-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    max-height: 100%;
+}
+
+.floating-button.relative-table-footer {
+    bottom: 90px;
+}
+
+.floating-button.relative-right-grid {
+    right: 40px;
+}

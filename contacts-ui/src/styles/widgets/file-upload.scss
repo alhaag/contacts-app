@@ -1,0 +1,29 @@
+.FileUpload-root {
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+.FileUpload-root.has-error {
+  border-color: #f44336;
+}
+
+.FileUpload-label {
+  display: block;
+  color: rgba(0,0,0,0.54);
+  font-size: 13px;
+}
+
+.FileUpload-root.has-error {
+  .FileUpload-label {
+    color: #f44336;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .FileUpload-label {
+    font-size: 16px;
+  }
+}
+
+.FileUpload-root.has-focus .FileUpload-label {
+  color: #2D2D2D;
+}

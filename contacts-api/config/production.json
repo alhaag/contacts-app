@@ -1,0 +1,29 @@
+{
+    "app": {
+        "version": "1.0.0",
+        "name": "Contacts API",
+        "description": "API principal da Contacts UI",
+        "host": "api.contacts.com.br",
+        "port": 3002,
+        "key": "contacts-api"
+    },
+    "db": {
+        "dialect": "mysql",
+        "host": "192.168.100.100",
+        "port": "3336",
+        "user": "user",
+        "password": "123456",
+        "database": "contacts"
+    },
+    "logger": {
+        "console": {
+            "active": true,
+            "level": "debug"
+        },
+        "file": {
+            "active": true,
+            "level": "debug",
+            "dir": "/var/log/contacts-api"
+        }
+    }
+}

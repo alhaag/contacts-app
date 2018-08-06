@@ -1,0 +1,209 @@
+@import '~react-md/src/scss/react-md';
+
+$md-primary-color: $md-indigo-500;
+$md-secondary-color: $md-pink-a-200;
+
+@include react-md-everything;
+
+.background-white {
+    background-color: #fff;
+}
+
+#main-content {
+
+}
+
+.grid-not-space-top {
+    padding-top: 0;
+
+    >.md-cell {
+        margin-top: 0;
+    }
+}
+
+/*DataTable*/
+.table-title {
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    margin-bottom: 0;
+}
+
+.md-data-table {
+    font-size: 13px;
+}
+
+@media (min-width: 768px) {
+    .md-data-table {
+        .md-table-column{
+            cursor: pointer;
+        }
+    }
+}
+
+.md-table-column--adjusted {
+    padding-right: 26px;
+}
+
+.empty-list {
+    padding: 20px 20px 10px 20px;
+    text-align: center;
+}
+
+.list-content {
+    padding: 15px 15px 15px 70px;
+}
+
+.md-table-column--header.sortable {
+    cursor: pointer;
+    color: $md-primary-color;
+    font-weight: bold;
+}
+
+blockquote {
+    border-left: 4px solid rgba(0,0,0,.12);
+    margin-left: 0;
+    padding-left: 1.5em;
+}
+
+/*TABs*/
+.scroll-tabs-container {
+
+    .md-tabs {
+        margin: 0 15px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .md-tabs-content {
+        margin: 15px;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* Lists **************/
+.help-message {
+    margin: 0;
+    padding: 15px;
+}
+
+/* Type colors ********/
+$primary-color: #007bff;
+$secondary-color: #cccccc;
+$success-color: #28a745;
+$danger-color: #dc3545;
+$warning-color: #ffc107;
+$info-color: #17a2b8;
+$dark-color: #333333;
+
+/* Text colors ******/
+.text-primary { color: $primary-color; }
+.text-secondary { color: $secondary-color; }
+.text-success { color: $success-color; }
+.text-danger { color: $danger-color; }
+.text-warning { color: $warning-color; }
+.text-info { color: $info-color; }
+
+
+/* Buttom colors ******/
+.btn-primary {
+    background-color: $primary-color;
+    color: #ffffff;
+    &:hover {
+        background-color: darken( $primary-color, 5% )
+    }
+}
+.btn-secondary {
+    background-color: $secondary-color;
+    &:hover {
+        background-color: darken( $secondary-color, 5% )
+    }
+}
+.btn-success {
+    background-color: $success-color;
+    color: #ffffff;
+    &:hover {
+        background-color: darken( $success-color, 5% )
+    }
+}
+.btn-danger {
+    background-color: $danger-color;
+    color: #ffffff;
+    &:hover {
+        background-color: darken( $danger-color, 5% )
+    }
+}
+.btn-warning {
+    background-color: $warning-color;
+    color: #333333;
+    &:hover {
+        background-color: darken( $warning-color, 5% )
+    }
+}
+.btn-info {
+    background-color: $info-color;
+    color: #ffffff;
+    &:hover {
+        background-color: darken( $info-color, 5% )
+    }
+}
+.btn-dark {
+    background-color: $dark-color;
+    color: #ffffff;
+    &:hover {
+        background-color: darken( $dark-color, 5% )
+    }
+}
+
+/* alerts */
+.alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    border: 1px solid transparent;
+}
+
+.alert-danger {
+    color: #721c24 !important;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+/* toolbar text field (toolbar search) */
+.md-toolbar {
+    .md-text-field--toolbar {
+        font-size: 20px;
+
+        .md-text-field {
+            margin: 0;
+            padding: 0;
+        }
+
+        @media screen and (min-width: 1025px) {
+            .md-text-field {
+                font-size: 18px;
+            }
+        }
+
+        hr {
+            display: none;
+        }
+    }
+}
+
+/* scroll overflows */
+.scroll-x-auto {
+    overflow-x: auto;
+}
+
+.scroll-y-auto {
+    overflow-y: auto;
+}
+
+
+#edit-content {
+    height: calc(100vh - 64px);
+    overflow-y: scroll;
+}
+
+.inline-form-buttom {
+    margin-top: 20px;
+}
